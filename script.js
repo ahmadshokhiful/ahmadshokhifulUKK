@@ -1,9 +1,9 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDeafult();
+        e.preventDefault();
 
-        DocumentFragment.querySelector(this.getAttribute('href')).scrollintoView({
-            behavior: 'smooth'
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
     });
 });
