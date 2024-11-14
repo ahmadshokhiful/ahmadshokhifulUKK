@@ -1,12 +1,14 @@
 /* Reset */
 * {
   margin: 0;
-  padding: 0;;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
+  background-color: yellowgreen;
+  font-style: oblique;
 }
 
 .logo {
@@ -16,7 +18,7 @@ body {
 }
 
 header {
-  background-color: bisque;
+  background-color: yellowgreen;
   padding: 20px;
 }
 
@@ -36,16 +38,21 @@ nav ul li {
   margin-right: 20px;
 }
 
-nav a{
+nav a {
   text-decoration: none;
-  color: #000000;
-}
+  color: white;
+  background-color: chocolate;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-style: oblique;
+} 
 
 .btn-order {
-  background-color: #e74c3c;
+  background-color: chocolate;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
+  font-style: oblique;
 }
 
 /* Hero Section */
@@ -65,27 +72,28 @@ nav a{
   border-radius: 10px;
 }
 
-.hero-conntent {
+.hero-content {
   max-width: 600px;
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
+ font-size: 2.5rem;
 }
 
 .btn-primary {
-  background-color: #3498db;
+  background-color: chocolate;
   color: white;
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 5px;
-  text-decoration: none;  
+  text-decoration: none;
+  font-style: oblique;
 }
 
 /* Products Section */
 #products h2 {
-  padding: 40px 0 0 40px;
+  padding:  40px 0 0 40px;
 }
 
 .product-list {
@@ -98,19 +106,19 @@ nav a{
 .product {
   text-align: center;
   max-width: 300px;
-  margin: 20px;
+  margin: 20px; 
 }
 
 .product img {
-  width: auto;
-  height: 400px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
-/* Testimonials Section */
+/* Teatimonials Section */
 #testimonials {
   background-color: #f0f0f0;
-  padding: 40px;
+  padding: 40PX;
   text-align: center;
 }
 
@@ -125,13 +133,13 @@ nav a{
   max-width: 300px;
 }
 
-.testimonials img { 
+.testimonials img {
   width: 100px;
   height: auto;
   border-radius: 50%;
 }
 
-/* Contact Section */
+/* Ccontact Section */
 #contact {
   padding: 40px;
   text-align: center;
@@ -145,15 +153,15 @@ form textarea {
   margin: 0 auto;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #f0f0f0;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: chocolate;
   color: white;
-  text-align: center;
-  padding: 20px;
+  cursor: pointer;
+  font-style: oblique;
 }
 
 /* Footer */
@@ -182,51 +190,52 @@ footer p {
   nav ul {
     display: none;
   }
-
+ 
   nav {
     flex-direction: column;
   }
-
+  
   .btn-order {
     margin-top: 10px;
   }
-
+  
   #hero {
     flex-direction: column;
     text-align: center;
   }
-
-  .hero-conntent h1 {
+  
+  .hero-content h1 {
     font-size: 2rem;
   }
+  
   .btn-primary {
     margin-bottom: 10px;
   }
+  
   #products h2 {
     text-align: center;
   }
-
+  
   .product-list {
     flex-direction: column;
     align-items: center;
-  }
-
+    }
+    
   .testimonials {
     flex-direction: column;
-  }
+    }
   .testimonial {
     margin: auto;
-  }
-
-  form input,
-  form textarea {
+    }
+   form input,
+   form textarea {
     width: 90%;
-  }
+    }
 }
 
 @media (max-width: 480px) {
-  .hero-ccontent h1 {
-    font-size: 1.8rem;
+  .hero-content h1 {
+  font-size: 1.8rem;
   }
 
   .product {
